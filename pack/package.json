@@ -1,0 +1,19 @@
+{
+  "name": "predict",
+  "version": "1.0.0",
+  "description": "a GUI interface of predict",
+  "main": "./buildElectron.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "author": "",
+  "icon": "./icon.png",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^21.0.1",
+    "electron-builder": "^23.3.3"
+  }
+}

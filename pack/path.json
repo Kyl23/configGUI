@@ -1,0 +1,7 @@
+{
+  "configTable": "\\configTable.json",
+  "predictConfig": "\\predictConfig.json",
+  "outPath": "\\out",
+
+  "runPredict": "python xxxxxx"
+}

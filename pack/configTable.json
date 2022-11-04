@@ -1,5 +1,5 @@
 {
-  "DXB": "DX",
+  "DX": "DX",
   "DY": "DY",
   "DELTA_X": "DELTA_X",
   "DELTA_Y": "DELTA_Y",
@@ -7,6 +7,5 @@
   "DT": "DT",
   "OCU": "OCU",
   "ICU": "ICU",
-  "PP": "PP",
-  "Warpage": "Warpage"
+  "PP": "PP"
 }

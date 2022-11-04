@@ -3,5 +3,5 @@
   "predictConfig": "\\predictConfig.json",
   "outPath": "\\out",
 
-  "runPredict": "python xxxxxx"
+  "runPredict": "network.exe"
 }

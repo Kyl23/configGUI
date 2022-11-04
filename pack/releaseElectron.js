@@ -6,7 +6,8 @@ const { app, BrowserWindow, ipcMain, shell } = require("electron");
 const path = require("path");
 
 const channel = require("./channel.json");
-const pathConfig = JSON.parse(fs.readFileSync(`${path.dirname(process.execPath)}\\path.json`, 'utf-8'));
+const pathConfig = require("./path.json");
+const configTable = require("./configTable.json");
 
 let win = null;
 
@@ -53,11 +54,8 @@ app.on("activate", () => {
 });
 
 ipcMain.on(channel.PASSING_INIT_PROPS, (event, arg) => {
-  const jsonFile = fs.readFileSync(
-    `${path.dirname(process.execPath)}${pathConfig.configTable}`,
-    "utf-8"
-  );
-  event.reply(channel.PASSING_INIT_PROPS, JSON.parse(jsonFile));
+  const jsonFile = configTable
+  event.reply(channel.PASSING_INIT_PROPS, jsonFile);
 });
 
 ipcMain.on(channel.SENDING_OUTPUT_PARAMS, (event, arg) => {
